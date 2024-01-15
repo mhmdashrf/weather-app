@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Api</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+            <div class="container">
+              <a class=".navbar-toggler text-white d-flex" href="#"><img class="" src="images/image1.png">
+                <div class="d-flex flex-column justify-content-start">
+                    <span class="text-white span-logo">weather</span>
+                    <span class=" span">tegline goes here</span>
+                </div>
+            </a>
+          
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="ms-auto navbar-nav ">
+                  <li class="nav-li">
+                    <a class="nav-links active " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-li ">
+                    <a class="nav-links " href="#">News</a>
+                  </li>
+                  <li class="nav-li">
+                    <a class="nav-links " href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-li ">
+                    <a class="nav-links " href="#">Photos</a>
+                  </li>
+                  <li class="nav-li">
+                    <a class="nav-links " href="#">Contact</a>
+                  </li>
+                </ul>
+              
+              </div>
+            </div>
+          </nav>
+           
+          <div class="main">
+           <div class="container con-main">
+            <form class="find-location ">
+                <input type="text" placeholder="Find your location...." id="search" >
+                <input type="button" value="find" id="btn-search">
+
+            </form>
+           </div>
+
+          </div>
+
+           <div class="cards">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="today w-100 h-100">
+                            <div class="d-flex headerToday  justify-content-between px-3 py-1 rounded-top-3">    
+                                <div class="today-body">9jan</div>
+                                <div class="date">......</div>
+                            </div>
+                            <div class="main-today  p-3">
+                                <div class="locationToDay fs-5"> </div>
+                                <div class="adad d-flex justify-content-evenly align-items-center">
+                                    <div class="innerToDay text-white py-3"><span id="span"></span><sup>o</sup>C</div>
+                                   <div ><img class="img w-100" src="" ></div>
+                                </div>
+                                <div class="custom1 py-3 "></div>
+                               
+                                <div class="spans ">
+                                    <span><img  src="images/image4.png"> 20%</span>
+                                    <span class="px-4"><img  src="images/image5.png"> 18km/h</span>
+                                    <span><img  src="images/image6.png"> East</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                   <div class="col-lg-4">
+                    <div class="next-day w-100 h-100">
+                        <div class="d-flex headerNextDay  justify-content-center p-1">    
+                           
+                            <div class="dateNextDay">10jan</div>
+                        </div>
+                        <div class="main-today px-3 d-flex flex-column justify-content-center align-items-center ">
+                            
+                            <div class="d-flex justify-content-center align-items-center flex-column">  
+                                <div  class="text-center pt-5"><img class="imgNextDay w-100" src=""></div>
+                                <div class="innerNextDay text-white fw-bolder"><sup>o</sup>c</div>
+                                <small class="pb-4 smallNextDay" >12o4<sup>o</sup>c</small>
+                                <div class="custom2">Clear</div>
+                            </div>
+                          
+                           
+                        </div>
+                    </div>
+                   </div>
+                    <div class="col-lg-4">
+                        <div class="after-next w-100 h-100">
+                            <div class="d-flex header justify-content-center p-1 rounded-top-3">    
+                               
+                                <div class="dateAfterNextDay">11jan</div>
+                            </div>
+                            <div class="main-today  px-3 d-flex justify-content-center align-items-center flex-column">
+                             
+                                <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                                    <div class="text-center pt-5"><img class="imgThirdDay w-100"  src=""></div>
+                                    <div class="innerAfterNextDay text-white  fw-bolder"><sup>o</sup>c</div>
+                                    <small class="pb-4 smallThirdDay">12o4<sup>o</sup>c</small>
+                                    <div class="custom3"> Clear</div>
+                                </div>
+                               
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+
+           <footer class="mt-5">
+            
+                <div class="container py-3">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <form class="form-footer">
+                                <input type="text" placeholder="Subscribe..." id="sub">
+                            <input type="button" value="Subscribe" id="btn-sub">
+                               </form>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="icons-social  d-flex justify-content-center align-items-center">
+                                <a href="https://www.facebook.com/hamada.medo.3956?mibextid=2JQ9oc"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/Muhammedashraff1?fbclid=IwAR29oGDG6orZEXukzz4eVSGLXtcOk_5SVZQFwKU0F3s22-sMcKkb_7-XK00"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                         <div class="pt-5 text-footer" >Copyright 2024 Company name. Designed by Mohamed Ashraf. All rights reserved</div>
+                    </div>
+                  
+
+                </div>
+            </div>
+           </footer>
+    </section>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
