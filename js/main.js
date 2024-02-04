@@ -20,7 +20,7 @@ const imgThirdDay = document.querySelector('.imgThirdDay');
 const btnSearch = document.querySelector('.btn-search');
 
 let searchValue = searchInput.value;
-let apikey = '11ab82072e1f4ac795a192649241501';
+let apikey = 'd413fea1a8cb44de86a01416240402';
 let result;
 
 
