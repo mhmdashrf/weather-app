@@ -66,6 +66,12 @@ async function searchFromApi(city) {
    console.log(searchApi);
    getLocationUser(searchApi);
 }
-searchInput.addEventListener('keyup',function(){
+searchInput.addEventListener('keyup',async function(){
    searchFromApi(searchInput.value);
+   if (searchInput.value == "") {
+      let url = `https://api.weatherapi.com/v1/forecast.json?key=${apikey}&q=cairo&days=3`
+      let cairoApi = await (await fetch(`${url}`)).json();
+      getLocationUser(cairoApi);
+   }
 })
+
